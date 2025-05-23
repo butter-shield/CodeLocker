@@ -6,3 +6,4 @@ var list = ds_list_create();
 ds_list_destroy(_instList);
 
 //We can just use array
+
