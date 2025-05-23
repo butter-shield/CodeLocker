@@ -1,1 +1,6 @@
-examples
+Getting schema from DB and making context from DB
+dotnet ef dbcontext scaffold "Server=localhost\SQLEXPRESS;Database=ChickenCoupDB_Dev;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context AppDbContext --force
+
+** Updating from app to DB
+dotnet ef migrations add InitialCreate8
+dotnet ef database update
